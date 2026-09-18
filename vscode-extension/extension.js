@@ -14,7 +14,7 @@ const fs = require('fs');
 const { sessionsFor, REGISTRY } = require('./sessions');
 
 const MAX_SHOWN = 3;
-const HANDOFF_PROMPT = '/context-handoff:handoff';
+const HANDOFF_PROMPT = '/pit-stop:handoff';
 const k = n => n ? `${Math.round(n / 1000)}k` : 'new';
 const ago = s => `${Math.round((Date.now() - s.updated) / 60000)} min ago`;
 

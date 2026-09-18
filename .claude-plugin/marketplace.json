@@ -1,12 +1,12 @@
 {
-  "name": "context-handoff",
-  "description": "Context Handoff for Claude Code: stop long sessions re-reading their whole history on every message.",
+  "name": "pit-stop",
+  "description": "Pit Stop (context saver) for Claude Code: stop long sessions re-reading their whole history on every message.",
   "owner": {
     "name": "macromotionai"
   },
   "plugins": [
     {
-      "name": "context-handoff",
+      "name": "pit-stop",
       "source": "./plugin",
       "description": "Offers a handoff to a fresh session once context passes a threshold, so long sessions stop re-reading hundreds of thousands of tokens per message."
     }

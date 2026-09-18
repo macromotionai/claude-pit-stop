@@ -70,7 +70,7 @@ The one exception: if agents or background commands you started are still runnin
 Otherwise call AskUserQuestion as the only thing you do: header "Context {k}k", question "{reason} Hand off to a fresh session?", options:
 1. label "Hand off + new session (Recommended)", description "Update CHECKLIST.md, write a handoff note, and open a fresh tab that continues from it."
 2. label "Keep going here", description "Stay in this session. I'll ask again at {next_k}k."
-If they pick hand off, use the context-handoff:handoff skill. If they pick keep going, run `python3 "{self}" --snooze` and say nothing more about it."""
+If they pick hand off, use the pit-stop:handoff skill. If they pick keep going, run `python3 "{self}" --snooze` and say nothing more about it."""
 
 AMBER_LINE = HEADER + """ Start your reply with exactly this line, then continue normally:
 "🟠 Context {k}k. I'll offer a handoff at the first natural break after {red_k}k.\""""

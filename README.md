@@ -1,4 +1,4 @@
-# Context Handoff for Claude Code
+# Pit Stop (context saver) for Claude Code
 
 Long Claude Code sessions get expensive in a way that is easy to miss: every message re-sends the whole conversation. At 400k tokens of context, a one-line question still re-reads 400k tokens. This plugin watches the context size and, once it passes a threshold, asks whether to hand off. If you say yes, Claude writes a short note of where things stand and opens a fresh session that picks up from that note.
 
@@ -43,8 +43,8 @@ The note carries what a checklist can't: the pending request word for word, wher
 In Claude Code:
 
 ```
-/plugin marketplace add macromotionai/claude-context-handoff
-/plugin install context-handoff@context-handoff
+/plugin marketplace add macromotionai/claude-pit-stop
+/plugin install pit-stop@pit-stop
 ```
 
 Restart Claude Code. That is all the plugin needs. Python 3 must be on your PATH.
@@ -101,7 +101,7 @@ python3 tests/test_context_watch.py
 ## Uninstall
 
 ```
-/plugin uninstall context-handoff@context-handoff
+/plugin uninstall pit-stop@pit-stop
 ```
 
 Then delete `~/.claude/state/context-watch/` and, if you want, `~/.claude/handoffs/`.
