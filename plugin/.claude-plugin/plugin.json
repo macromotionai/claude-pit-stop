@@ -1,0 +1,10 @@
+{
+  "name": "context-handoff",
+  "displayName": "Context Handoff",
+  "version": "1.0.0",
+  "description": "Watches session context and, past a threshold, offers to hand off to a fresh session that continues from a written note. Measured: 32% fewer tokens on the same build.",
+  "author": { "name": "macromotionai" },
+  "repository": "https://github.com/macromotionai/claude-context-handoff",
+  "license": "MIT",
+  "keywords": ["context", "handoff", "tokens", "cost", "hooks"]
+}

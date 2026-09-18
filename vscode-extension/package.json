@@ -1,0 +1,27 @@
+{
+  "name": "claude-context-status",
+  "displayName": "Claude Context Status",
+  "description": "Shows how much context this window's Claude Code sessions carry, in the status bar. Companion to the context-handoff plugin.",
+  "publisher": "macromotionai",
+  "version": "1.0.0",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "claudeContextStatus.handoff",
+        "title": "Claude Context: Hand off a session"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/macromotionai/claude-context-handoff"
+  }
+}
